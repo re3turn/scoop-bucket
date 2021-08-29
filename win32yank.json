@@ -1,12 +1,17 @@
 {
-    "version": "0.0.4",
-    "url": [
-        "https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip"
-    ],
-    "hash": [
-        "33a747a92da60fb65e668edbf7661d3d902411a2d545fe9dc08623cecd142a20"
-    ],
+    "homepage": "https://github.com/equalsraf/win32yank",
+    "checkver": "github",
     "bin": [
         "win32yank.exe"
-    ]
+    ],
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/equalsraf/win32yank/releases/download/$version/win32yank-x86.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/equalsraf/win32yank/releases/download/$version/win32yank-x64.zip"
+            }
+        }
+    }
 }
